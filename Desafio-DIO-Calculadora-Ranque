@@ -1,0 +1,42 @@
+//Calculadora de partidas rankeadas
+
+let saldoVitorias = pontos(150,30)  //Dados para entrada da função
+
+function pontos(vitorias,derrotas){  //Chamando a função 
+    let subtrair = vitorias - derrotas
+    return subtrair
+}
+console.log("O herói tem " + saldoVitorias + " de saldo em vitórias e derrotas ")
+
+avaliar (saldoVitorias)
+function avaliar(){  //Chamando função para laços de repetição e tomadas de decisões 
+    let vitorias = saldoVitorias
+    if(vitorias <= 10){
+        nivel = "Ferro!"
+        return nivel
+    }
+    else if(vitorias > 10 && vitorias <= 20){
+        nivel = "Bronze!"
+        return nivel
+    }
+    else if(vitorias > 20 && vitorias <= 50){
+        nivel = "Prata!"
+        return nivel
+    }
+    else if(vitorias > 50 && vitorias <= 80){
+        nivel = "Ouro!"
+        return nivel
+    }
+    else if(vitorias > 80 && vitorias <= 90){
+        nivel = "Diamante!"
+        return nivel
+    }
+    else if(vitorias > 90 && vitorias <= 100){
+        nivel = "Lendário!"
+        return nivel
+    }
+    else  nivel = "Imortal!"
+    }
+    
+    console.log("------------------------")
+    console.log("Seu nível é: " + nivel)
